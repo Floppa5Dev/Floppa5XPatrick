@@ -1,0 +1,11 @@
+local foreverkey = "P039--=2__HK3"
+local weeklykey = "patrick"
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "PatrickHubKeySystem"
+screenGui.Parent = game.CoreGui
+local frame = Instance.new("Frame")
+frame.Name = "Main"
+frame.Parent = screenGui
+local textbox = Instance.new("TextBox")
+textbox.Parent = frame
