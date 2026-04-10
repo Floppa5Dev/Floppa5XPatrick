@@ -79,12 +79,12 @@ local JP = Player:CreateSlider({
 Player:CreateButton({
    Name = "TP To Base",
    Callback = function()
-local bases = game.Workspace.Bases:GetChildren()
-for base in bases do 
-    if base:GetAttribute("Owner") == player.UserId then
-    player.Character.HumanoidRootPart.CFrame = base.OwnerSpawn.CFrame
+    local bases = game.Workspace.Bases:GetChildren()
+    for base in bases do 
+        print(tonumber(base:GetAttribute("Owner)))
+            player.Character.HumanoidRootPart.CFrame = base.OwnerSpawn.CFrame
+        end
     end
-end
    end,
 })
 
