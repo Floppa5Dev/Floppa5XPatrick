@@ -15,7 +15,7 @@ local function startScript()
 
 
   local Window = Rayfield:CreateWindow({
-   Name = "Patrick Hub | You VS Floppa",
+   Name = "Patrick Hub | Drill For Brainrots",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Loading Patrick Hub..",
    LoadingSubtitle = "by Patrick and normal guy",
@@ -73,6 +73,69 @@ local JP = Player:CreateSlider({
    Flag = "JumpPower", -- A flag is the identifier for the configuration file; make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
   player.Character.Humanoid.JumpPower = Value
+   end,
+})
+
+Player:CreateButton({
+   Name = "TP To Common Zone",
+   Callback = function()
+    player.Character.HumanoidRootPart.CFrame = CFrame.new(-1, 3374, 6)
+   end,
+})
+
+Player:CreateButton({
+   Name = "TP To Best Common Zone",
+   Callback = function()
+    player.Character.HumanoidRootPart.CFrame = CFrame.new(-104, 3346, 8)
+   end,
+})
+
+Player:CreateButton({
+   Name = "TP To Uncommon Zone",
+   Callback = function()
+    player.Character.HumanoidRootPart.CFrame = CFrame.new(-212, 3318, 18)
+   end,
+})
+
+Player:CreateButton({
+   Name = "TP To Best Uncommon Zone",
+   Callback = function()
+    player.Character.HumanoidRootPart.CFrame = CFrame.new(-317, 3290, 13)
+   end,
+})
+
+Player:CreateButton({
+   Name = "TP To Rare Zone",
+   Callback = function()
+    player.Character.HumanoidRootPart.CFrame = CFrame.new(-416, 3262, 14)
+   end,
+})
+
+Player:CreateButton({
+   Name = "TP To Best Rare Zone",
+   Callback = function()
+    player.Character.HumanoidRootPart.CFrame = CFrame.new(-523, 3234, -3)
+   end,
+})
+
+Player:CreateButton({
+   Name = "TP To Epic Zone",
+   Callback = function()
+    player.Character.HumanoidRootPart.CFrame = CFrame.new(-622, 3206, -7)
+   end,
+})
+
+Player:CreateButton({
+   Name = "TP To Best Epic Zone",
+   Callback = function()
+    player.Character.HumanoidRootPart.CFrame = CFrame.new(-728, 3178, -13)
+   end,
+})
+
+Player:CreateButton({
+   Name = "TP To Legendary Zone",
+   Callback = function()
+    player.Character.HumanoidRootPart.CFrame = CFrame.new(-842, 3150, -11)
    end,
 })
 
