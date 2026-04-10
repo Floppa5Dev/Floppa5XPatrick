@@ -1,1 +1,3 @@
-warn("WIP")
+if game.PlaceId == 85177851006073 then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Floppa5Dev/Floppa5XPatrick/refs/heads/main/DrillForBrainrots))()
+end
